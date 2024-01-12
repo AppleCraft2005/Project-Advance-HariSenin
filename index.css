@@ -1,0 +1,265 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main article {
+    background-color: #005555;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px 30px 30px;
+}
+
+main article .logo {
+    width: 150px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+main article .ilustrasi {
+    width: 400px;
+}
+
+main aside {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main aside .logo-green {
+    display: none;
+}
+
+main aside  .form-box{
+    display: flex;
+    flex-direction: column;
+    width: 426px;
+    height: auto;
+    box-shadow: 0px 2px 10px #3A35411A ;
+    border-radius: 16px;
+    padding: 48px 24px 48px 24px;
+}
+
+main aside .form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main aside .form-box h2,
+main aside .form-box p {
+    text-align: center;
+}
+
+main aside .form-box h2 {
+    font-size: 32px;
+    line-height: 35.2px;
+}
+
+main aside .form-box p {
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    margin: 10px 0 10px 0;
+
+}
+
+main aside .form-box form .email,
+main aside .form-box form .password {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+main aside .form-box form label {
+    font-weight: 600;
+    color: #4A505C;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+main aside .form-box form input {
+    width: 378px;
+    height: 56px;
+    border-radius: 6px;
+    border: 1px solid #3A35413B;
+    line-height: 22.4px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    padding: 0px  12px 0px 12px;
+}
+
+main aside .form-box form .password .logo-eye {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom:45px;
+    left: 340px;
+}
+
+main aside .form-box .opsi {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+main aside .form-box .opsi span {
+    font-weight: 600;
+}
+
+main aside .form-box .opsi a {
+    color: #005555;
+}
+
+main aside .form-box button {
+    width: 378px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+main aside .form-box .login,
+main aside .form-box .login-google,
+main aside .form-box .atau {
+    background-color: #005555;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+main aside .form-box .login a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+
+main aside .form-box .atau {
+    color: #6C717A;
+    background-color: white;
+    margin: 20px;
+}
+
+main aside .form-box .login-google {
+    background-color: white;
+    border: 1px solid #3A35413B;
+    color: #1D2433;
+}
+
+main aside .form-box .login-google img {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+    right: 11.6px;
+}
+
+main aside footer {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #E1E6EF;
+    padding: 16px 0 16px 0;
+    font-size: 12px;
+    line-height: 16.8px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: #6C717A;
+}
+
+@media screen and (max-width: 1024px) { 
+    main {
+        justify-content: center;
+    }
+
+    main article {
+        display: none;
+    }
+
+    main aside .logo-green {
+        display: inline;
+        width: 146px;
+        height: auto;
+        padding: 8px 0 8px 0;
+        position: relative;
+        bottom: 50px;
+    }
+
+    main aside .form-box {
+        width: 320px;
+        height: auto;
+        padding: 24px;
+        position: relative;
+        bottom: 40px;
+    }
+
+    main aside .form-box h2 {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    main aside .form-box p {
+        font-size: 11px;
+        line-height: 15.4px;
+    }
+
+    main aside .form-box form input {
+        width: auto;
+        height: 40px;
+        font-size: 11px;
+        line-height: 15.4px;
+    }
+
+    main aside .form-box form .password .logo-eye {
+        bottom:35px;
+        left: 240px;
+    }
+
+    main aside .form-box .opsi {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    main aside .form-box button {
+        width: auto;
+        height: 29px;
+    }
+
+    main aside .form-box .login,
+    main aside .form-box .login-google,
+    main aside .form-box .atau {
+        font-size: 11px;
+        line-height: 15.4px;
+    }
+
+    main aside footer {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
